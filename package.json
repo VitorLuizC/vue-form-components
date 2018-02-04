@@ -1,0 +1,36 @@
+{
+  "name": "vue-form-components",
+  "version": "0.0.0",
+  "description": "",
+  "main": "components/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/vue-form-components.git"
+  },
+  "keywords": [
+    "vue",
+    "form-components",
+    "form",
+    "vue-component"
+  ],
+  "author": "Vitor Cavalcanti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/vue-form-components/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/vue-form-components#readme",
+  "dependencies": {
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "poi": "^9.6.13",
+    "vue": "^2.5.13",
+    "vue-template-compiler": "^2.5.13"
+  }
+}

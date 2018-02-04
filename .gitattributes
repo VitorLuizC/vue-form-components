@@ -1,0 +1,5 @@
+# Enforce Unix line-endings.
+* text=auto eol=lf
+
+# Don't show lockfile's diff.
+yarn.lock -diff
