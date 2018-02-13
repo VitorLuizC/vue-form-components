@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App'
+import Form from '@components'
+
+Vue.use(Form)
 
 const render = (λ) => λ(App)
 

@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "poi"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "poi": "^9.6.13",
+    "poi-preset-resolve-alias": "^1.0.1",
+    "rollup-plugin-vue": "^3.0.0",
     "vue": "^2.5.13",
     "vue-template-compiler": "^2.5.13"
   }

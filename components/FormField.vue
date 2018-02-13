@@ -6,17 +6,15 @@
       v-bind="$attrs"
       v-mask="mask"
       type="text"
-      class="entry"
+      class="field"
     />
   </fieldset>
 </template>
 
 <script>
   import { mask } from 'vue-the-mask'
-
-  const types = [ 'text', 'email', 'password' ]
-
-  const isFunction = (value) => typeof value === 'function'
+  import isType from '@validate/isFieldType'
+  import isValidators from '@validate/isFieldValidators'
 
   export default {
     props: {
@@ -25,16 +23,19 @@
       type: {
         type: String,
         required: true,
-        validator: (type) => types.includes(type)
+        validator: isType
       },
       validators: {
         type: Array,
         default: () => [],
-        validator: (validators) => validators.every(isFunction)
+        validator: isValidators
       },
     },
     directives: {
-      mask: (el, binding) => binding.value ? mask(el, binding) : undefined,
+      mask: (el, binding) => {
+        if (binding.value)
+          return mask(el, binding)
+      },
     },
   }
 </script>

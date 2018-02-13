@@ -1,5 +1,5 @@
-import FormField from './FormField'
-import FormContainer from './FormContainer'
+import FormField from '@components/FormField'
+import FormContainer from '@components/FormContainer'
 
 /**
  * Install all form components.
